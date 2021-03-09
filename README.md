@@ -21,12 +21,20 @@ A successful new user registration requires the following valid data:
 ![create_new_acct](https://github.com/n-edmond/Foundations_of_SE/blob/main/Images/create_new_acct.png)
 
 •	User name: it must start with a letter and consist of only letters and digits without any space character. User name is case insensitive. Different users must have different user names. 
+
 •	Password: it must have at least six characters, consist of only letters, digits, and special characters (@, #, $, ^, &), and at least one upper-case letter, one lower-case letter, one digit, and one special character.
+
 •	First name: it must consist of only letters
+
 •	Last name: it must consist of only letters
+
 •	Email address: it must be a valid email address
+
 •	Phone number: it must include three-digit area code and seven digit phone number
+
+
 These data items are represented as instance variables in the UserAcccount class in the business package. The “register new user” and “login” user stories are implemented by the following methods in the UserAccountManager class, respectively: 
+
 •	public String registerNewUser(String userName, String password, String reenteredPassword, String firstName, String lastName, String email, String phone)
 
 •	public UserAccount login(String userName, String password)
