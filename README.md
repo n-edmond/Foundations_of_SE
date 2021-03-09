@@ -33,6 +33,8 @@ A successful new user registration requires the following valid data:
 •	Phone number: it must include three-digit area code and seven digit phone number
 
 
+
+
 These data items are represented as instance variables in the UserAcccount class in the business package. The “register new user” and “login” user stories are implemented by the following methods in the UserAccountManager class, respectively: 
 
 •	public String registerNewUser(String userName, String password, String reenteredPassword, String firstName, String lastName, String email, String phone)
