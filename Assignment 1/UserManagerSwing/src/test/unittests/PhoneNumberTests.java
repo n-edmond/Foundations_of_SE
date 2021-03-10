@@ -31,19 +31,19 @@ public class PhoneNumberTests extends TestCase {
 	//FAILURE TESTS
 	public void testInvalidPhoneNumber() {
 		//phone number does not have enough digits. Should fail
-		System.out.println("Phone number failure. Not enough digits");
+		System.out.println("Phone number failure. Not enough digits. testInvalidPhoneNumber() \n");
 		assertFalse(UserAccount.isPhoneNumberValid("12345678"));
 	}
 	
 	public void testInvalidPhoneNumberNoneEntered() {
 		//no phone number entered. Should fail
-		System.out.println("Phone number failure. Empty string encountered");
+		System.out.println("Phone number failure. Empty string encountered. testInvalidPhoneNUmberNoneEntered() \n");
 		assertFalse(UserAccount.isPhoneNumberValid(""));
 	}
 	
 	public void testInvalidPhoneNumberNotEnoughHypens() {
 		//should fail since not enough hyphens
-		System.out.println("Phone number failure. Not enough hyphens");
+		System.out.println("Phone number failure. Not enough hyphens. testInvalidPhoneNUmberNotEnoughHyphens() \n");
 		assertFalse(UserAccount.isPhoneNumberValid("816-1234567"));
 	}
 

@@ -16,13 +16,13 @@ public class LastNameTests extends TestCase {
 	//FAILURE
 	public void testInvalidLastNameContainsNum() {
 		//last name is invalid since it contains a digit so test should fail
-		System.out.println("Last Name failure, Int encountered");
+		System.out.println("Last Name failure, Int encountered. testInvalidLastNameContainsNum() \n");
 		assertFalse(UserAccount.isLastNameValid("Sm1th"));
 	}
 	
 	public void testInvalidLastNameEmpty() {
 		//last name is empty so test should fail
-		System.out.println("Last Name failure. Empty string encountered");
+		System.out.println("Last Name failure. Empty string encountered testInvalidLastNameContainsNum() \n");
 		assertFalse(UserAccount.isLastNameValid(""));
 	}
 

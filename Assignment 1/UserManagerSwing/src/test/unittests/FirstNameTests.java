@@ -15,13 +15,13 @@ public class FirstNameTests extends TestCase {
 	
 	public void testInvalidFirstNameContainsNum() {
 		//contains a number so this test should fail
-		System.out.println("First name failure. Int encountered");
+		System.out.println("First name failure. Int encountered. testInvalidFirstNameContainsNum()\n");
 		assertFalse(UserAccount.isFirstNameValid("1John"));
 	}
 	
 	public void testInvalidFirstNameEmpty() {
 		//last name is empty so test should fail
-		System.out.println("First name failure. Empty string encountered");
+		System.out.println("First name failure. Empty string encountered. testInvalidFistNameEmpty() \n");
 		assertFalse(UserAccount.isFirstNameValid(""));
 	}
 

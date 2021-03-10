@@ -27,25 +27,25 @@ public class UserNameTests extends TestCase {
 	//FAILURES
 	public void testInvalidUserNameBeginWithInt() {
 		//user name is not valid as it cannot begin with integer so test should fail
-		System.out.println("UserName failure. Begins with int");
+		System.out.println("UserName failure. Begins with int. testInvalidUserNameBeginsWithInt() \n");
 		assertFalse(UserAccount.isUserNameValid("1admin"));
 	}
 	
 	public void testInvalidUserNameHasSpace() {
 		//user name is not valid as it cannot contain spaces so test should fail
-		System.out.println("UserName failure. Whitespace encountered");
+		System.out.println("UserName failure. Whitespace encountered. testInvalidUserNameHasSpace() \n");
 		assertFalse(UserAccount.isUserNameValid("ad min"));
 	}
 	
 	public void testInvalidUserNameHasSpecChar() {
 		//user name is valid as it cannot contain special characters so test should fail
-		System.out.println("UserName failure. Special character encountered");
+		System.out.println("UserName failure. Special character encountered. testInvalidUserNameHasSpecChar() \n");
 		assertFalse(UserAccount.isUserNameValid("adm!n"));
 	}
 	
 	public void testInvalidUserNameOnlyNums() {
 		//user name is not valid as it only contains numbers
-		System.out.println("UserName failure. No letters encountered; begins with int");
+		System.out.println("UserName failure. No letters encountered; begins with int. testInvalidUserNameOnlyNums() \n");
 		assertFalse(UserAccount.isUserNameValid("2020"));
 	}
 }

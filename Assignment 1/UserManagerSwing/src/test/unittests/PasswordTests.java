@@ -27,31 +27,31 @@ public class PasswordTests extends TestCase {
 	//FAILURES
 	public void testInvalidPasswordEmpty() {
 		//an empty password is invalid so test should fail
-		System.out.println("Password failure. Empty string encountered");
+		System.out.println("Password failure. Empty string encountered. testInvalidPasswordEmpty() \n");
 		assertFalse(UserAccount.isPasswordValid(""));
 	}
 	
 	public void testInvalidPasswordMissingUpper() {
 		//this should fail since there is no upper case letters
-		System.out.println("Password failure. No upper case encountered");
+		System.out.println("Password failure. No upper case encountered. testInvalidPasswordMissingUpper() \n");
 		assertFalse(UserAccount.isPasswordValid("@white0house"));	
 	}
 	
 	public void testInvalidPasswordMissingLower() {
 		//this should fail since there are no lower case letters
-		System.out.println("Password failure. No lower case encountered");
+		System.out.println("Password failure. No lower case encountered. testInvalidPasswordMissingLower() \n");
 		assertFalse(UserAccount.isPasswordValid("@WHITE0HOUSE"));
 	}
 	
 	public void testInvalidPasswordMissingSpecChar() {
 		//this should fail since there are no special characters
-		System.out.println("Password failure. No special character encountered");
+		System.out.println("Password failure. No special character encountered. testInvalidPasswordMissingSpecChar() \n");
 		assertFalse(UserAccount.isPasswordValid("White0House"));
 	}
 	
 	public void testInvalidPasswordInvalidSpecChar() {
 		//this test should fail since it is not one of the authorized special characters
-		System.out.println("Password failure. Unauthorized special character encountered");
+		System.out.println("Password failure. Unauthorized special character encountered. testInvalidPasswordInvalidSpecChar() \n");
 		assertFalse(UserAccount.isPasswordValid("!White0House"));
 	}
 

@@ -13,7 +13,7 @@ public class EmailAddressTests extends TestCase {
 	}
 	public void testInvaldiEmailAddressNoSym() {
 		//this email lacks the '@' symbol so email should fail
-		System.out.println("email failure. no @ symbol");
+		System.out.println("email failure. no @ symbol. testInvalidEmailAddressNoSym() ");
 		assertFalse(UserAccount.isEmailValid("thisShouldFail.com"));
 	}
 
