@@ -120,7 +120,8 @@ public class RegisterNewUserTests extends TestCase{
 		
 		String registrationResult = userAccountManager.registerNewUser("2020", "@White0House", "@White0House",
 				"John", "Smith", "johnsmith@gmail.com", "7024265734");
-		System.out.println(registrationResult);
+		//I want to display where exactly the error message was produced from
+		System.out.println("testRegistrationWithInvalidUserName() " + registrationResult );
 		assertFalse(registrationResult.equalsIgnoreCase(UserAccountManager.NOINPUTERROR));
 	}
 	
@@ -129,7 +130,8 @@ public class RegisterNewUserTests extends TestCase{
 		
 		String registrationResult = userAccountManager.registerNewUser("TeSt1", "@White0House", "@White0House",
 				"John", "Doe", "johndoe.gmail.com", "1234567890");
-		System.out.println(registrationResult);
+		//I want to display where exactly the error message was produced from
+		System.out.println("testRegistrationWithInvalidEmail() " + registrationResult);
 		assertFalse(registrationResult.equalsIgnoreCase(UserAccountManager.NOINPUTERROR));
 	}
 	
@@ -138,7 +140,8 @@ public class RegisterNewUserTests extends TestCase{
 		
 		String registrationResult = userAccountManager.registerNewUser("TeSt2", "@White0House", "@White0House",
 				"1456j", "Doe", "johndoe@gmail.com", "1234567890");
-		System.out.println(registrationResult);
+		//I want to display where exactly the error message was produced from
+		System.out.println("testRegistrationWithInvalidFirstName() " + registrationResult);
 		assertFalse(registrationResult.equalsIgnoreCase(UserAccountManager.NOINPUTERROR));	
 	}
 	
@@ -147,7 +150,8 @@ public class RegisterNewUserTests extends TestCase{
 		
 		String registrationResult = userAccountManager.registerNewUser("TeSt3", "@White0House", "@White0House",
 				"John", "D123oe", "johndoe@gmail.com", "1234567890");
-		System.out.println(registrationResult);
+		//I want to display where exactly the error message was produced from
+		System.out.println("testRegistrationWithInvalidLastName() " + registrationResult);
 		assertFalse(registrationResult.equalsIgnoreCase(UserAccountManager.NOINPUTERROR));	
 	}
 	
@@ -156,7 +160,8 @@ public class RegisterNewUserTests extends TestCase{
 		
 		String registrationResult = userAccountManager.registerNewUser("TeSt4", "@White0House", "@WhiteHouse",
 				"John", "Doe", "johndoe@gmail.com", "1234567890");
-		System.out.println(registrationResult);
+		//I want to display where exactly the error message was produced from
+		System.out.println("testRegistrationWithNonmatchingPasswords() " + registrationResult);
 		assertFalse(registrationResult.equalsIgnoreCase(UserAccountManager.NOINPUTERROR));
 		
 	}
@@ -166,7 +171,8 @@ public class RegisterNewUserTests extends TestCase{
 		
 		String registrationResult = userAccountManager.registerNewUser("TeSt6", "1234", "1234",
 				"John", "Doe", "johndoe@gmail.com", "1234567890");
-		System.out.println(registrationResult);
+		//I want to display where exactly the error message was produced from
+		System.out.println("testRegistrationWithInvalidPasswords() " + registrationResult);
 		assertFalse(registrationResult.equalsIgnoreCase(UserAccountManager.NOINPUTERROR));
 	}
 	
@@ -175,7 +181,8 @@ public class RegisterNewUserTests extends TestCase{
 		
 		String registrationResult = userAccountManager.registerNewUser("TeSt5", "@White0House", "@White0House",
 				"John", "Doe", "johndoe@gmail.com", "123-45678");
-		System.out.println(registrationResult);
+		//I want to display where exactly the error message was produced from
+		System.out.println("testRegistrationWithInvalidPhoneNum() " + registrationResult);
 		assertFalse(registrationResult.equalsIgnoreCase(UserAccountManager.NOINPUTERROR));
 		
 	}
@@ -185,7 +192,8 @@ public class RegisterNewUserTests extends TestCase{
 		
 		String registrationResult = userAccountManager.registerNewUser("admin", "@White0House", "@White0House",
 				"John", "Doe", "johndoe@gmail.com", "1234567890");
-		System.out.println(registrationResult);
+		//I want to display where exactly the error message was produced from\
+		System.out.println("testRegistrationWithExistingUserName() " + registrationResult);
 		assertFalse(registrationResult.equalsIgnoreCase(UserAccountManager.NOINPUTERROR));
 		
 		

@@ -20,9 +20,9 @@ public class UserAccountManager {
     		if (!inputCheckResult.equals(""))
     			return inputCheckResult;
     		if 	(doesUserNameExist(userName))
-    			return "User name is not available!";
+    			return "User name is not available!\n";
     		if (!password.equals(reenteredPassword)) {
-    			return "Re-entered password does not match!";
+    			return "Re-entered password does not match!\n";
     		}
     		UserAccount newAccount = new UserAccount();
     		setAccountProfile(newAccount, userName, password, firstName, lastName, email, phone);
