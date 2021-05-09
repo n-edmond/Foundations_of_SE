@@ -49,7 +49,7 @@ wiki page - https://github.com/n-edmond/Foundations_of_SE/wiki/Assignment-1
 
 ________________________________________________________________________________________________________
                
-### Assignment 2- Assignment TBD
+### Assignment 2- Assignment Refactoring  and  Automated  Testing.
 
 This  assignment  focuses  on  refactoring  and  automated  testing.  The  problems  are  based  on  the code  given  below.  It  is  part  of  a  sales  system  that  supports  discount  policies.  Even  though  the code is given in Java, you may choose any object-oriented programming language along with an xUnit framework.  If you don’t use Java, it is your responsibility to translate the given code without changing the functionality.
 ```public class Sale {
